@@ -136,14 +136,6 @@ Corner_2.CornerRadius = UDim.new(0, 6)
 Corner_2.Name = "Corner"
 Corner_2.Parent = Frame
 
-ImageButton.Parent = Frame
-ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ImageButton.BackgroundTransparency = 1.000
-ImageButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ImageButton.BorderSizePixel = 0
-ImageButton.Position = UDim2.new(0.275862068, 0, 0.0560245141, 0)
-ImageButton.Size = UDim2.new(0.431034476, 0, 0.170068011, 0)
-ImageButton.Image = "rbxassetid://15761343004"
 
 UIAspectRatioConstraint.Parent = ImageButton
 
@@ -267,26 +259,11 @@ local function Notification()
     coroutine.wrap(GFOA_fake_script)()    
 end
 
-ImageButton_2.Parent = Frame
-ImageButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ImageButton_2.BackgroundTransparency = 1.000
-ImageButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ImageButton_2.BorderSizePixel = 0
-ImageButton_2.Position = UDim2.new(0.18965517, 0, 0.350749731, 0)
-ImageButton_2.Size = UDim2.new(0.603448272, 0, 0.238095209, 0)
-ImageButton_2.Image = "rbxassetid://15761411282"
+
 
 UIAspectRatioConstraint_2.Parent = ImageButton_2
 
-ImageButton_3.Parent = Frame
-ImageButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ImageButton_3.BackgroundTransparency = 1.000
-ImageButton_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ImageButton_3.BorderSizePixel = 0
-ImageButton_3.Position = UDim2.new(0.18965517, 0, 0.69768852, 0)
-ImageButton_3.Size = UDim2.new(0.603448272, 0, 0.238095209, 0)
-ImageButton_3.Image = "rbxassetid://15761455452"
-ImageButton_3.ScaleType = Enum.ScaleType.Crop
+
 
 UIAspectRatioConstraint_3.Parent = ImageButton_3
 
@@ -313,13 +290,50 @@ TextBox.Size = UDim2.new(0, 198, 0, 160)
 TextBox.ClearTextOnFocus = false
 TextBox.Font = Enum.Font.SourceSans
 TextBox.MultiLine = true
-TextBox.Text = "print(\"Powered By Alysse!\")\\n"
+TextBox.Text = "print(\"Powered By Alysse!\")"
 TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextBox.TextScaled = true
 TextBox.TextSize = 10.000
 TextBox.TextWrapped = true
 TextBox.TextXAlignment = Enum.TextXAlignment.Left
 TextBox.TextYAlignment = Enum.TextYAlignment.Top
+
+ImageButton.Parent = Frame
+ImageButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageButton.BackgroundTransparency = 1.000
+ImageButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageButton.BorderSizePixel = 0
+ImageButton.Position = UDim2.new(0.275862068, 0, 0.0560245141, 0)
+ImageButton.Size = UDim2.new(0.431034476, 0, 0.170068011, 0)
+ImageButton.Image = "rbxassetid://15761343004"
+ImageButton.MouseButton1Click:Connect(function()
+    loadstring(TextBox.Text)()
+end)
+
+ImageButton_2.Parent = Frame
+ImageButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageButton_2.BackgroundTransparency = 1.000
+ImageButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageButton_2.BorderSizePixel = 0
+ImageButton_2.Position = UDim2.new(0.18965517, 0, 0.350749731, 0)
+ImageButton_2.Size = UDim2.new(0.603448272, 0, 0.238095209, 0)
+ImageButton_2.Image = "rbxassetid://15761411282"
+ImageButton_2.MouseButton1Click:Connect(function()
+    TextBox.Text = ""
+end)
+
+ImageButton_3.Parent = Frame
+ImageButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageButton_3.BackgroundTransparency = 1.000
+ImageButton_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageButton_3.BorderSizePixel = 0
+ImageButton_3.Position = UDim2.new(0.18965517, 0, 0.69768852, 0)
+ImageButton_3.Size = UDim2.new(0.603448272, 0, 0.238095209, 0)
+ImageButton_3.Image = "rbxassetid://15761455452"
+ImageButton_3.ScaleType = Enum.ScaleType.Crop
+ImageButton_3.MouseButton1Click:Connect(function()
+    setclipboard(TextBox.Text)
+end)
 
 UIAspectRatioConstraint_5.Parent = TextBox
 UIAspectRatioConstraint_5.AspectRatio = 1.237
@@ -678,11 +692,6 @@ KeyMenu.Position = UDim2.new(0.317000002, 0, 0.296999991, 0)
 KeyMenu.Size = UDim2.new(0, 267, 0, 158)
 KeyMenu.Visible = false
 
-
-KeyLink = "https://direct-link.net/1074338/britishx-keysystem"
-
-shared.key = KeyLink
-
 TextButton_6.Parent = KeyMenu
 TextButton_6.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
 TextButton_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -695,7 +704,7 @@ TextButton_6.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextButton_6.TextSize = 14.000
 TextButton_6.MouseButton1Click:Connect(function()
     Notification("KeySystem Link Has been Copyed.")
-    setclipboard(KeyLink)
+    setclipboard("https://direct-link.net/1074338/britishx-keysystem")
 end)
 
 TextBox_2.Parent = KeyMenu
@@ -733,7 +742,7 @@ local function MPYJ_fake_script() -- TextButton_5.LocalScript
 	task.wait(1)
 	
     TextButton_5.MouseButton1Click:Connect(function()
-        if TextBox_2.Text == KeyLink then
+        if TextBox_2.Text == "BritishX" then
             script.Parent.Parent.Parent.BritishMenu.Visible = true
             script.Parent.Parent.Parent.KeyMenu:TweenPosition(closed, Enum.EasingDirection.In, Enum.EasingStyle.Quad,1.2, true)
         end
