@@ -1,4 +1,4 @@
--- Aqura beta 
+
 local AquraBeta = Instance.new("ScreenGui")
 local Aqura = Instance.new("Frame")
 local Tab = Instance.new("Frame")
