@@ -1,0 +1,14 @@
+local Unicode = " "
+Message = Message .. Unicode:rep(200 - 250)
+for i = 1,100 do
+    local args = {
+        [1] = {
+            [1] = {
+                [1] = Message
+            },
+            [2] = "n"
+        }
+    }
+    game:GetService("ReplicatedStorage"):WaitForChild("dataRemoteEvent"):FireServer(unpack(args))    
+    wait(math.random(12,14))
+end
