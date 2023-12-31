@@ -1,6 +1,10 @@
 
 print("Aqura Loaded!")
-wait(3)
+task.spawn(function()
+   repeat task.wait()
+
+until shared.Developer == true
+end)
 local AquraBeta = Instance.new("ScreenGui")
 local Aqura = Instance.new("Frame")
 local Tab = Instance.new("Frame")
