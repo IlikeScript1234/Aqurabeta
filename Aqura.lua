@@ -242,6 +242,9 @@ Copy.TextColor3 = Color3.fromRGB(255, 255, 255)
 Copy.TextScaled = true
 Copy.TextSize = 14.000
 Copy.TextWrapped = true
+Copy.MouseButton1Click:Connect(function()
+ setclipboard(Code.Text)
+end)
 
 UIAspectRatioConstraint_10.Parent = Copy
 UIAspectRatioConstraint_10.AspectRatio = 2.294
