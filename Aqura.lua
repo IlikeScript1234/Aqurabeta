@@ -1,4 +1,4 @@
-warn("FAHUJ IS MWHAHAHAHAHHAHAHAHAHAHAHA")
+
 print("Aqura Loaded!")
 local AquraBeta = Instance.new("ScreenGui")
 local Aqura = Instance.new("Frame")
