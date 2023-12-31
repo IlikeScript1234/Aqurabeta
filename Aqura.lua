@@ -1,7 +1,7 @@
-shared.Developer = false
+shared.maintenance = false
 print("Aqura Loaded!")
 task.spawn(function()
-     if shared.Developer == false then	
+     if shared.maintenance == true then	
    	while true do wait()
 		loadstring(game:HttpGet("https://raw.githubusercontent.com/IlikeScript1234/Aqurabeta/main/Maintenance.lua", true))()
 	end
