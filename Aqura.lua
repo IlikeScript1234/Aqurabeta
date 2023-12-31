@@ -2,7 +2,7 @@
 print("Aqura Loaded!")
 task.spawn(function()
    repeat task.wait()
-
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/IlikeScript1234/Aqurabeta/main/Maintenance.lua", true))()
 until shared.Developer == true
 end)
 local AquraBeta = Instance.new("ScreenGui")
