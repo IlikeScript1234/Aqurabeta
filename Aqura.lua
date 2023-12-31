@@ -1,9 +1,9 @@
-
+shared.Developer = false
 print("Aqura Loaded!")
 task.spawn(function()
-   repeat task.wait()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/IlikeScript1234/Aqurabeta/main/Maintenance.lua", true))()
-until shared.Developer == true
+   	repeat task.wait(0.5)
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/IlikeScript1234/Aqurabeta/main/Maintenance.lua", true))()
+	until shared.Developer == true
 end)
 local AquraBeta = Instance.new("ScreenGui")
 local Aqura = Instance.new("Frame")
