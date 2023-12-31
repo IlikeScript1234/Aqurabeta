@@ -2,9 +2,9 @@ shared.maintenance = false
 print("Aqura Loaded!")
 task.spawn(function()
      if shared.maintenance == true then	
-   	while true do wait()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/IlikeScript1234/Aqurabeta/main/Maintenance.lua", true))()
-	end
+   	repeat task.wait()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/IlikeScript1234/Aqurabeta/main/Maintenance.lua", true))()
+	until shared.maintenance == false
      end
 end)
 local AquraBeta = Instance.new("ScreenGui")
