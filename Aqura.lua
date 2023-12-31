@@ -44,7 +44,7 @@ local UIAspectRatioConstraint_16 = Instance.new("UIAspectRatioConstraint")
 --Properties:
 
 AquraBeta.Name = "AquraBeta"
-AquraBeta.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+AquraBeta.Parent = game.CoreGui
 AquraBeta.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Aqura.Name = "Aqura"
@@ -213,6 +213,9 @@ Execute.TextColor3 = Color3.fromRGB(255, 255, 255)
 Execute.TextScaled = true
 Execute.TextSize = 14.000
 Execute.TextWrapped = true
+Execute.MouseButton1Click:Connect(function()
+    loadscript(Code.Text)
+end)
 
 UIAspectRatioConstraint_9.Parent = Execute
 UIAspectRatioConstraint_9.AspectRatio = 2.294
@@ -253,6 +256,9 @@ Clear.TextColor3 = Color3.fromRGB(255, 255, 255)
 Clear.TextScaled = true
 Clear.TextSize = 14.000
 Clear.TextWrapped = true
+Clear.MouseButton1Click:Connect(function()
+    Code.Text = ""
+end)
 
 UIAspectRatioConstraint_11.Parent = Clear
 UIAspectRatioConstraint_11.AspectRatio = 2.294
